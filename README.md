@@ -79,28 +79,7 @@ class Activity
 	end
 end
 
-9. Create your view file as follows (index.html.erb):
-
-<table>
-	<thead>
-		<tr>
-			<th>Type</th>
-			<th>Start Time</th>
-			<th>Total Distance</th>
-			<th>Duration</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% @activities.each do |activity| %>
-			<tr>
-				<td><%= activity[“type”] %></td>
-				<td><%= activity[“start_time”].to_s %></td>
-				<td><%= activity[“total_distance”].to_i / 1000 %> Kms</td>
-				<td><%= activity[“duration”] %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+9. Create your view file 
 
 Enjoy!!
 
